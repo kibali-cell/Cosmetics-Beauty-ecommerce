@@ -1,0 +1,264 @@
+/*-- -------------------------- -->
+<---            Hero            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #hero-408 {
+        padding: var(--sectionPadding);
+        /* 112px - 200px */
+        padding-top: 20px;
+        padding-right: 0;
+    }
+
+    #hero-408 .cs-container {
+        width: 100%;
+        /* changes to 100% at tablet */
+        max-width: 34.375rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* 36px - 100px */
+        gap: clamp(2.25rem, 10vw, 6.25rem);
+    }
+
+    #hero-408 .cs-content {
+        max-width: 39.375rem;
+        padding-right: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #hero-408 .cs-title {
+        /* 31px - 61px */
+        font-size: clamp(1.9375rem, 4.4vw, 3.8125rem);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: left;
+        max-width: 43.75rem;
+        /* 12px - 24px */
+        margin: 0 0 clamp(0.75rem, 1.5vw, 1.5rem);
+        color: var(--headerColor);
+        position: relative;
+    }
+
+    #hero-408 .cs-color {
+        color: var(--bodyTextColor);
+        display: block;
+        background-color: #fed2d1;
+    }
+
+    #hero-408 .cs-text {
+        /* 16px - 25px */
+        font-size: clamp(1rem, 2vw, 1.5625rem);
+        line-height: 1.5em;
+        text-align: left;
+        width: 100%;
+        max-width: 40.625rem;
+        margin: 0;
+        /* 24px - 40px */
+        margin-bottom: clamp(1.5rem, 4.2vw, 3rem);
+        color: var(--bodyTextColor);
+    }
+
+    #hero-408 .cs-button-solid {
+        font-size: 1rem;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        margin-right: 1.5rem;
+        color: #fff;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+    }
+
+    #hero-408 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+
+    #hero-408 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+
+    #hero-408 .cs-button-transparent {
+        font-size: 1rem;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: var(--primary);
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: transparent;
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+        transition:
+            background-color 0.3s,
+            color 0.3s;
+    }
+
+    #hero-408 .cs-button-transparent:hover {
+        background-color: var(--primary);
+        color: #fff;
+    }
+
+    #hero-408 .cs-header {
+        /* 14px - 20px */
+        font-size: clamp(0.875rem, 1.5vw, 1.25rem);
+        line-height: 1.5em;
+        /* 40px - 100px */
+        margin: clamp(2.5rem, 5vw, 6.25rem) 0 0.75rem 0;
+        width: 100%;
+        color: var(--bodyTextColor);
+        display: block;
+    }
+
+    #hero-408 .cs-logo-group {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #hero-408 .cs-logo {
+        width: auto;
+        /* 18px - 32px */
+        height: clamp(1.125rem, 1.5vw, 2rem);
+        filter: grayscale(1);
+    }
+
+    #hero-408 .cs-stat-group {
+        width: 100%;
+        border-radius: 1.25rem;
+        aspect-ratio: 0.92696629;
+        /* clips the corners around the border radius */
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        position: relative;
+        z-index: 1;
+    }
+
+    #hero-408 .cs-stat-box {
+        width: 50%;
+        /* changes at tablet */
+        height: 9.125rem;
+        /* 24px - 48px */
+        padding: clamp(1.5rem, 3vw, 3rem);
+        /* prevents padding and border from affecting height and width */
+        box-sizing: border-box;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero-408 .cs-stat-box:nth-of-type(1) {
+        background-color: rgba(23, 99, 22, 0.96);
+    }
+
+    #hero-408 .cs-stat-box:nth-of-type(2) {
+        background-color: rgba(34, 149, 33, 0.96);
+    }
+
+    #hero-408 .cs-stat {
+        /* 25px - 61px */
+        font-size: clamp(1.5625rem, 3.5vw, 3.8125rem);
+        line-height: 1.2em;
+        text-align: left;
+        margin: 0;
+        display: block;
+    }
+
+    #hero-408 .cs-desc {
+        /* 14px - 20px */
+        font-size: clamp(0.875rem, 1.6vw, 1.25rem);
+        line-height: 1.2em;
+        margin: 0.25rem 0 0 0;
+        display: block;
+    }
+
+    #hero-408 .cs-background {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    #hero-408 .cs-background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #hero-408 {
+        padding-right: 0;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        background-color: #ffedf6;
+    }
+
+    #hero-408 .cs-container {
+        max-width: 90%;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    #hero-408 .cs-content {
+        width: 45%;
+        padding: 0;
+    }
+
+    #hero-408 .cs-stat-group {
+        width: 45%;
+        max-height: 37.0625rem;
+        aspect-ratio: 0.92647059;
+        flex: none;
+    }
+
+    #hero-408 .cs-stat-box {
+        /* 126px - 221px */
+        height: clamp(7.875rem, 18vw, 13.8125rem);
+    }
+}

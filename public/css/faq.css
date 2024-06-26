@@ -1,0 +1,233 @@
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #faq-1741 {
+      padding: var(--sectionPadding);
+      position: relative;
+    }
+    #faq-1741 .cs-container {
+      width: 100%;
+      /* changes to 1280px at desktop */
+      max-width: 36.5rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 6vw, 4rem);
+    }
+    #faq-1741 .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: center;
+    }
+    #faq-1741 .cs-title {
+      max-width: 15ch;
+      margin: 0 0 2rem;
+    }
+    #faq-1741 .cs-button-solid {
+      font-size: 1rem;
+      font-weight: 700;
+      /* 46px - 56px */
+      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+      text-align: center;
+      text-decoration: none;
+      min-width: 9.375rem;
+      margin: 0;
+      /* prevents padding from adding to the width */
+      box-sizing: border-box;
+      padding: 0 1.5rem;
+      background-color: var(--primary);
+      color: #fff;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+    #faq-1741 .cs-button-solid:before {
+      content: "";
+      width: 0%;
+      height: 100%;
+      background: #000;
+      opacity: 1;
+      border-radius: 0.25rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: width 0.3s;
+    }
+    #faq-1741 .cs-button-solid:hover:before {
+      width: 100%;
+    }
+    #faq-1741 .cs-faq-group {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    #faq-1741 .cs-faq-item {
+      list-style: none;
+      width: 100%;
+      /* clips all corners of the button that overlap the rounded border */
+      overflow: hidden;
+      transition: border-bottom 0.3s;
+    }
+    #faq-1741 .cs-faq-item.active .cs-button {
+      background-color: var(--primary);
+      color: var(--bodyTextColorWhite);
+    }
+    #faq-1741 .cs-faq-item.active .cs-button:before {
+      background-color: var(--bodyTextColorWhite);
+      transform: rotate(315deg);
+    }
+    #faq-1741 .cs-faq-item.active .cs-button:after {
+      background-color: var(--bodyTextColorWhite);
+      transform: rotate(-315deg);
+    }
+    #faq-1741 .cs-faq-item.active .cs-item-text {
+      height: auto;
+      /* 16px - 24px */
+      padding: 1rem clamp(1rem, 2vw, 1.5rem);
+      opacity: 1;
+      border: 1px solid #e8e8e8;
+    }
+    #faq-1741 .cs-button {
+      /* 16px - 20px */
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      font-weight: bold;
+      line-height: 1.2em;
+      text-align: left;
+      width: 100%;
+      padding: 1rem;
+      padding-left: 3.25rem;
+      background-color: transparent;
+      color: var(--headerColor);
+      border: 1px solid #e8e8e8;
+      display: block;
+      position: relative;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    #faq-1741 .cs-button:hover {
+      cursor: pointer;
+    }
+    #faq-1741 .cs-button:before {
+      /* left line */
+      content: "";
+      width: 0.5rem;
+      height: 0.125rem;
+      background-color: var(--headerColor);
+      opacity: 1;
+      display: block;
+      position: absolute;
+      top: 45%;
+      left: 1.125rem;
+      transform: rotate(45deg);
+      transition: transform 0.5s;
+      /* animate the transform from the left side of the x axis, and the center of the y */
+      transform-origin: left center;
+    }
+    #faq-1741 .cs-button:after {
+      /* right line */
+      content: "";
+      width: 0.5rem;
+      height: 0.125rem;
+      background-color: var(--headerColor);
+      opacity: 1;
+      display: block;
+      position: absolute;
+      top: 45%;
+      left: 1.3125rem;
+      transform: rotate(-45deg);
+      transition: transform 0.5s;
+      /* animate the transform from the right side of the x axis, and the center of the y */
+      transform-origin: right center;
+    }
+    #faq-1741 .cs-item-text {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      height: 0;
+      margin: 0;
+      /* clips the text so it doesn't show up */
+      overflow: hidden;
+      color: var(--bodyTextColor);
+      opacity: 0;
+      transition: opacity 0.3s, padding-bottom 0.3s;
+    }
+    #faq-1741 .cs-gallery {
+      width: 100%;
+      /* changes to 1720 at tablet */
+      max-width: 36.5rem;
+      margin: clamp(3rem, 6vw, 4rem) auto 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      /* 16px - 20px */
+      gap: clamp(1rem, 1.5vw, 1.25rem);
+    }
+    #faq-1741 .cs-picture {
+      /* 210px - 400px */
+      min-height: clamp(13.125rem, 27vw, 25rem);
+      display: block;
+      grid-column: span 5;
+      grid-row: span 1;
+      position: relative;
+    }
+    #faq-1741 .cs-picture img {
+      width: 100%;
+      height: 100%;
+      /* makes it act like a background image */
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #faq-1741 .cs-gallery {
+      max-width: 107.5rem;
+    }
+    #faq-1741 .cs-picture {
+      grid-column: span 1;
+    }
+  }
+  /* Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+    #faq-1741 .cs-container {
+      max-width: 80rem;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+    #faq-1741 .cs-content {
+      text-align: left;
+      width: 40%;
+      align-items: flex-start;
+      /* prevents flexbox from squishing it */
+      flex: none;
+    }
+    #faq-1741 .cs-gallery {
+      grid-template-columns: repeat(5, 1fr);
+      border-radius: 25rem;
+    }
+    #faq-1741 .cs-picture {
+      grid-column: span 1;
+    }
+    #faq-1741 .cs-picture:nth-of-type(4),
+    #faq-1741 .cs-picture:nth-of-type(5) {
+      grid-column: span 1;
+    }
+  }
+                                  
